@@ -1,7 +1,7 @@
 public class FirstClass {
     public static void main(String[] args) {
 
-        Notebook notebook = new Notebook(600, 1300, 2019 );
+        Notebook notebook = new Notebook(600, 1300, 2019);
         System.out.println("Notebook's weight:" + " " + notebook.weight + "; " + "Notebook's price:" + " " + notebook.price + "; " + "Year:" + " " + notebook.year);
         notebook.checkPrice();
         notebook.checkWeight();
@@ -18,5 +18,5 @@ public class FirstClass {
         oldNotebook.checkPrice();
         oldNotebook.checkWeight();
         oldNotebook.checkYearAndPrice();
-        }
     }
+}
