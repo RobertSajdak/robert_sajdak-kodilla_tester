@@ -1,7 +1,7 @@
 public class User {
 
-    private static int age;
     String name;
+    private int age;
 
     public User(String name, int age) {
         this.name = name;
@@ -20,12 +20,24 @@ public class User {
         int result;
         result = 0;
         for (int i = 0; i < users.length; i++) {
-            result = result + getAge(users);
-            System.out.println(result);
+            User user = users[i];
+            result = result + user.getAge();
+        }
+        System.out.println(result);
+
+        int average;
+        average = result / users.length;
+        System.out.println(average);
+
+        for (int i = 0; i < users.length; i++) {
+            User user = users[i];
+            if (user.age < average) {
+                System.out.println(user.name);
+            }
         }
     }
 
-    public static int getAge(User[] users) {
+    public int getAge() {
         return age;
     }
 
