@@ -8,4 +8,5 @@ public interface Car {
 
     void decreaseSpeed(); //zmniejszenie prędkości
 
+    String getColor();
 }

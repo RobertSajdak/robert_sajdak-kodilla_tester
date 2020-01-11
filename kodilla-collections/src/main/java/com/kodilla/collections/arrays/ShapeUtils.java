@@ -8,7 +8,7 @@ import com.kodilla.collections.interfaces.Triangle;
 public class ShapeUtils {
     public static void displayShapeInfo(Shape shape) {
         System.out.println("----------------------");
-        System.out.println("Shape kinde: " + getShapeName(shape));
+        System.out.println("Shape kind: " + getShapeName(shape));
         System.out.println("Shape area: " + shape.getArea());
         System.out.println("Shape perimeter: " + shape.getPerimeter());
     }
