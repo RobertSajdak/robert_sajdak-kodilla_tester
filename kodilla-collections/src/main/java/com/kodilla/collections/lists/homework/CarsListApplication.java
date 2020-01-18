@@ -1,7 +1,9 @@
 package com.kodilla.collections.lists.homework;
 
-import com.kodilla.collections.interfaces.Square;
 import com.kodilla.collections.interfaces.homework.Car;
+import com.kodilla.collections.interfaces.homework.Fiat;
+import com.kodilla.collections.interfaces.homework.Ford;
+import com.kodilla.collections.interfaces.homework.Opel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,27 +11,12 @@ import java.util.List;
 public class CarsListApplication {
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
-        cars.add(new Car() {
-            @Override
-            public int getSpeed() {
-                return 0;
-            }
+        cars.add(new Opel());
+        cars.add(new Opel());
+        cars.add(new Fiat());
+        cars.add(new Ford());
 
-            @Override
-            public void increaseSpeed() {
 
-            }
-
-            @Override
-            public void decreaseSpeed() {
-
-            }
-
-            @Override
-            public String getColor() {
-                return null;
-            }
-        });
 
     }
 }

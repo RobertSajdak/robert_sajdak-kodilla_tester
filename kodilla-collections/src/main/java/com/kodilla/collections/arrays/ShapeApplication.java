@@ -15,15 +15,16 @@ public class ShapeApplication {
             shapes[n] = drawShape();
         for (Shape shape : shapes)
             ShapeUtils.displayShapeInfo(shape);
-        }
+    }
 
     private static Shape drawShape() {
         Random random = new Random();
+
         int drawnShapeKind = random.nextInt(3);
+
         double a = random.nextDouble() * 100 + 1;
         double b = random.nextDouble() * 100 + 1;
         double c = random.nextDouble() * 100 + 1;
-
         if (drawnShapeKind == 0)
             return new Circle(a);
         else if (drawnShapeKind == 1)

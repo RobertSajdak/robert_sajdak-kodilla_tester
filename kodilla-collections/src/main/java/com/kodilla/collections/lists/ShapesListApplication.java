@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShapesListApplication {
-
     public static void main(String[] args) {
         List<Square> shapes = new ArrayList<>();
         shapes.add(new Square(10.0));
@@ -23,6 +22,7 @@ public class ShapesListApplication {
 
         //W pętli for each będzie to wyglądało tak:
         for (Square square : shapes) {
+
             if (square.getArea() > 20)
                 System.out.println(square + ", area: " + square.getArea());
         }
