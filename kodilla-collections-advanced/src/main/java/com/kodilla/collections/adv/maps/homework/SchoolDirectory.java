@@ -15,11 +15,16 @@ public class SchoolDirectory {
         School annaSchool = new School("University of technology", "High", "Warsaw");
         School philSchool = new School("High school", "College", "Lodz");
 
+        johnSchool.addClassroom(15, "1A");
+        annaSchool.addClassroom(18, "3C");
+        philSchool.addClassroom(22, "2B");
+
         principalSchoolMap.put(john, johnSchool);
         principalSchoolMap.put(anna, annaSchool);
         principalSchoolMap.put(phil, philSchool);
 
         System.out.println(principalSchoolMap.get(john));
-
+        System.out.println(principalSchoolMap.get(anna));
+        System.out.println(principalSchoolMap.get(phil));
       }
 }

@@ -14,9 +14,7 @@ public class School {
         this.addressOfSchool = addressOfSchool;
     }
 
-    private List<Integer> pupils = new ArrayList<>();
-
-
+    private List<Classroom> pupils = new ArrayList<>();
 
 
     public String getTypeOfSchool() {
@@ -31,14 +29,17 @@ public class School {
         return addressOfSchool;
     }
 
-    public List<Integer> getPupils() {
+    public List<Classroom> getPupils() {
         return pupils;
+    }
+
+    public void addClassroom(int number, String name) {
+        this.pupils.add(new Classroom(number, name));
     }
 
     @Override
     public String toString() {
-        return "School{" +
-                "pupils=" + pupils +
-                '}';
+        return "School have pupils" +
+                pupils;
     }
 }

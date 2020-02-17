@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BasicMapExample {
+
     public static void main(String[] args) {
         Map<String, Double> grades = new HashMap<>();
         grades.put("Mathematics", 5.0);
