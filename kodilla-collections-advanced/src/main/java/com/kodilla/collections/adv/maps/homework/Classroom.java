@@ -19,7 +19,7 @@ public class Classroom {
 
     @Override
     public String toString() {
-        return nameOfClass +
-                " have " + numberOfStudents;
+        return numberOfStudents +
+                " in the " + nameOfClass + " class";
     }
 }

@@ -16,6 +16,7 @@ public class SchoolDirectory {
         School philSchool = new School("High school", "College", "Lodz");
 
         johnSchool.addClassroom(15, "1A");
+        johnSchool.addClassroom(25, "2D");
         annaSchool.addClassroom(18, "3C");
         philSchool.addClassroom(22, "2B");
 
