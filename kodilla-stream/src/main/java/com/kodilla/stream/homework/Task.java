@@ -8,6 +8,8 @@ public class Task {
     private LocalDate opened;
     private LocalDate deadline;
 
+    LocalDate myDate = LocalDate.of(2020, 11, 20);
+
     public Task(String name, LocalDate opened, LocalDate deadline) {
         this.name = name;
         this.opened = opened;

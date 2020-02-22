@@ -10,7 +10,8 @@ import java.util.Random;
 public class ShapeApplication {
 
     public static void main(String[] args) {
-        Shape[] shapes = new Shape[5];
+        Random random = new Random();
+        Shape[] shapes = new Shape[random.nextInt(20) + 1];
         for (int n = 0; n < shapes.length; n++)
             shapes[n] = drawShape();
         for (Shape shape : shapes)
@@ -25,6 +26,7 @@ public class ShapeApplication {
         double a = random.nextDouble() * 100 + 1;
         double b = random.nextDouble() * 100 + 1;
         double c = random.nextDouble() * 100 + 1;
+
         if (drawnShapeKind == 0)
             return new Circle(a);
         else if (drawnShapeKind == 1)

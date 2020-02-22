@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class GradesTestSuite {
+
     @Test
     public void shouldHaveZeroLength() {
         Grades grades = new Grades();
@@ -64,4 +65,3 @@ public class GradesTestSuite {
         assertEquals(3, physicsAverage, 0.01);
     }
 }
-
