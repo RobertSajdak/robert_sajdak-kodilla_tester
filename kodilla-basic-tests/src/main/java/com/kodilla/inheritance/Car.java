@@ -4,7 +4,7 @@ public class Car {
     private int wheels;
     private int seats;
 
-    public Car (int wheels, int seats) {
+    public Car (int wheels, int seats, int speed) {
         this.wheels = wheels;
         this.seats = seats;
     }

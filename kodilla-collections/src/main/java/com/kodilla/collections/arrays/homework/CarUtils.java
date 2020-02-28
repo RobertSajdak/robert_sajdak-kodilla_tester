@@ -5,13 +5,11 @@ import com.kodilla.collections.interfaces.homework.Fiat;
 import com.kodilla.collections.interfaces.homework.Ford;
 import com.kodilla.collections.interfaces.homework.Opel;
 
-import java.util.Random;
-
 public class CarUtils {
     public static void describeCar(Car car) {
         System.out.println("----------------------");
         System.out.println("Car kind: " + getCarKind(car));
-        System.out.println("Car colour: " + car.getColor());
+        System.out.println("Car colour: " + car.getColour());
         System.out.println("Car speed: " + car.getSpeed());
     }
 
@@ -24,12 +22,5 @@ public class CarUtils {
             return "Ford";
         else
             return "Unknown car kind";
-    }
-
-    private static String getColor(Car car) {
-        Random random = new Random();
-        int colourOfCar = random.nextInt(3);
-
-
     }
 }

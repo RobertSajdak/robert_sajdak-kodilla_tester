@@ -3,20 +3,20 @@ package com.kodilla.collections.interfaces.homework;
 public class CarRace {
 
     public static void main(String[] args) {
-        Ford ford = new Ford();
-        Ford anotherford = new Ford();
-        Ford fiestaford = new Ford();
+        Ford ford = new Ford(35);
+        Ford anotherford = new Ford(44);
+        Ford fiestaford = new Ford(97);
         doRace(ford);
         doRace(anotherford);
         doRace(fiestaford);
 
-        Opel opel = new Opel();
-        Opel astraopel = new Opel();
+        Opel opel = new Opel(44);
+        Opel astraopel = new Opel(57);
         doRace(opel);
         doRace(anotherford);
 
-        Fiat fiat = new Fiat();
-        Fiat tipofiat = new Fiat();
+        Fiat fiat = new Fiat(33);
+        Fiat tipofiat = new Fiat(88);
         doRace(fiat);
         doRace(tipofiat);
     }

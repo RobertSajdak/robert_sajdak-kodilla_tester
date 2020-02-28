@@ -12,6 +12,7 @@ public class CarsApplication {
     public static void main(String[] args) {
         Random random = new Random();
         Car[] cars = new Car[random.nextInt(15) + 1];
+
         for (int n = 0; n < cars.length; n++)
             cars[n] = drawCar();
         for (Car car : cars)
@@ -21,16 +22,13 @@ public class CarsApplication {
     public static Car drawCar() {
         Random random = new Random();
         int drawnCarKind = random.nextInt(3);
-
-        double a = random.nextDouble() * 50 + 1;
-        double b = random.nextDouble() * 50 + 1;
-        double c = random.nextDouble() * 50 + 1;
+        int speed = random.nextInt(100);
 
         if (drawnCarKind == 0)
-            return new Fiat();
+            return new Fiat(speed);
         else if (drawnCarKind == 1)
-            return new Ford();
+            return new Ford(speed);
         else
-            return new Opel();
+            return new Opel(speed);
     }
 }
