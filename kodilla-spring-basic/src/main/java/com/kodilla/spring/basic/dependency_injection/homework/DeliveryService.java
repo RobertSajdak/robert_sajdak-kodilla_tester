@@ -1,8 +1,8 @@
 package com.kodilla.spring.basic.dependency_injection.homework;
 
-public class DeliveryService {
+public interface DeliveryService {
 
-    public boolean deliverPackage(String address, double weight) {
+    static boolean deliverPackage(String address, double weight) {
         if (weight > 30) {
             System.out.println("Package too heavy");
             return false;
