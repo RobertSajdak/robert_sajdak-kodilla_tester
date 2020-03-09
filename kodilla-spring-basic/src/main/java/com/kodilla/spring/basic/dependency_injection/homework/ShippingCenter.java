@@ -14,9 +14,9 @@ public class ShippingCenter {
     }
 
     public void sendPackage(String address, double weight) {
-        if (deliveryService.deliverPackage(address, weight)) {
-            notificationService.success(address);
+        if (DeliveryService.deliverPackage(address, weight)) {
+            NotificationService.success(address);
         }
-        notificationService.fail(address);
+        NotificationService.fail(address);
     }
 }

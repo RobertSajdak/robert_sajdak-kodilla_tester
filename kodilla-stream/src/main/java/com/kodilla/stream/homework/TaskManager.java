@@ -5,6 +5,6 @@ import java.util.List;
 
 public class TaskManager {
     public static void main(String[] args) {
-        List<LocalDate> deadline = TaskRepository.getTasks();
+        TaskRepository.getTasks();
     }
 }
