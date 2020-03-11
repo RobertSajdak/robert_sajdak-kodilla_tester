@@ -1,5 +1,8 @@
-package com.kodilla.spring.basic.dependency_injection.homework;
+package com.kodilla.spring.basic.spring_dependency_injection.homework;
 
+import com.kodilla.spring.basic.dependency_injection.homework.DeliveryService;
+import com.kodilla.spring.basic.dependency_injection.homework.NotificationService;
+import com.kodilla.spring.basic.dependency_injection.homework.ShippingCenter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
