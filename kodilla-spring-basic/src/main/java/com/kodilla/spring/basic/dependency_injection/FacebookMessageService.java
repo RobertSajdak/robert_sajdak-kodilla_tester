@@ -4,6 +4,6 @@ public class FacebookMessageService implements MessageService {
 
     @Override
     public String send(String message, String receiver) {
-        System.out.println("Sending [" + message + "] to: " + receiver + " using Facebook");
+        return ("Sending [" + message + "] to: " + receiver + " using Facebook");
     }
 }

@@ -12,7 +12,7 @@ public class GamblingMachineTestSuite {
     private GamblingMachine machine = new GamblingMachine();
 
     @ParameterizedTest
-    @CsvFileSource(resources = {"/gamblingMachineData.csv"})
+    @CsvFileSource(resources = {"resources/gamblingMachineData.csv"})
     public void shouldThrowExceptionWhenAmountOfPassingNumbersIsDifferentThanSix(int one, int two, int three, int four, int five) {
         Set<Integer> input = new HashSet<>();
         input.add(one);
