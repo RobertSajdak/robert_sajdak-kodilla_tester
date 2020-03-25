@@ -43,7 +43,7 @@ public class IsItSummerSteps implements En {
         });
 
         Given("today is 23th day of August", () -> {
-            this.today = MonthDay.of(8, 24);
+            this.today = MonthDay.of(8, 23);
         });
 
         When("I ask whether it's Summer", () -> {
